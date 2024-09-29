@@ -177,11 +177,10 @@
         const tableCells = document.querySelectorAll('table td');
         tableCells.forEach(cell => {
             cell.addEventListener('click', () => {
-                // Перевіряємо поточний колір фону
                 if (cell.style.backgroundColor === 'rgb(209, 179, 158)') { // #d1b39e в RGB
-                    cell.style.backgroundColor = ''; // Повертаємо до стандартного кольору
+                    cell.style.backgroundColor = ''; 
                 } else {
-                    cell.style.backgroundColor = '#d1b39e'; // Змінюємо на новий колір
+                    cell.style.backgroundColor = '#d1b39e'; 
                     cell.style.transform = 'scale(1.1)';
                     setTimeout(() => {
                         cell.style.transform = 'scale(1)';
